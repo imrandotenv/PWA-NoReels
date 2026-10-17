@@ -22,6 +22,7 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
+    "build": "expo export -p web && node scripts/copy-pwa.js",
     "build:web": "expo export -p web && node scripts/copy-pwa.js",
     "export:web": "expo export -p web && node scripts/copy-pwa.js",
     "proxy": "node proxy/proxy-server.js",

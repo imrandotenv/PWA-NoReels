@@ -168,9 +168,14 @@ npm run proxy
 ### 3. Build Production PWA
 Export an optimized static PWA bundle ready for Vercel, Netlify, or GitHub Pages:
 ```bash
+npm run build
+# or
 npm run build:web
 ```
-The compiled files with `manifest.json` and `sw.js` will be generated in `dist/`.
+The compiled files with `manifest.json`, `sw.js`, and SPA assets will be generated in `dist/`.
+
+#### Deploy to Vercel
+The repository includes a ready-to-use `vercel.json` configuration specifying the `dist` output directory and SPA rewrite rules. Simply push to your repository and Vercel will automatically build and deploy the PWA.
 
 ### 4. Run on Android or iOS (Native)
 Start the Expo Metro bundler:
